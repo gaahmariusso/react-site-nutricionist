@@ -7,6 +7,6 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     *, input, button {
-        font-family: 'Roboto', 'sans-serif';
+        font-family: 'Poppins', 'sans-serif';
     }
 `

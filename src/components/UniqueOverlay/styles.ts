@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { LogoSVG, BurgerSVG } from './IconSVG';
 
 export const Container = styled.div`
     position: sticky;
@@ -18,23 +17,79 @@ export const Header = styled.header`
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    padding: 0 20px;
-    min-height: 52px;
+    padding: 10px 100px;
+    width: calc(100% - 15px);
+    min-height: 60px;
 `
 
-export const Logo = styled(LogoSVG)`
-    height: 17px;
-    cursor: pointer;
+export const NavbarStyle = styled.div`
+    height: 60px;
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 30px;
+        list-style: none;
+        text-align: center;
+        justify-content: end;
+        margin-right: 2rem;
+        text-transform: uppercase;
+    }
+
+    .nav-links {
+        color: #000;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            color: #3D096E;
+            border-bottom: 3px solid #3D096E;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+    }
 `
 
-export const Burger = styled(BurgerSVG)`
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+export const Button = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding-right: 5px;
+    > button {
+        background: #3D096E;
+        color: #fff;
+        opacity: 0.8;
+
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        padding: 25px 30px 25px 30px;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+
+        &.white {
+            background: #fff;
+            color: #1a1720;
+            opacity: 0.65;
+        }
+
+        & + button {
+            margin: 10px 0 0;
+        }
+    }
 `
 
 export const Footer = styled(motion.footer)`

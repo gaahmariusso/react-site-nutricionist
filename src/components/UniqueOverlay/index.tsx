@@ -3,30 +3,37 @@ import { useTransform } from 'framer-motion';
 
 import useWrapperScroll from '../Model/useWrapperScroll';
 
-import { Container, Header, Logo, Burger, Footer } from './styles';
+import logoImg from '../../assets/images/logo_mm.svg';
+
+import { Navbar } from './Navbar';
+
+import { Container, Header, Button, Footer } from './styles';
 
 const UniqueOverlay: React.FC = () => {
-  const { scrollYProgress } = useWrapperScroll()
+  const { scrollYProgress } = useWrapperScroll();
 
-  const opacity = useTransform(scrollYProgress, [0.9, 1], [0, 1])
+  const opacity = useTransform(scrollYProgress, [0.9, 1], [0, 1]);
 
   return (
     <Container>
       <Header>
-        <Logo />
-        <Burger />
+        <img src={logoImg} alt="Logo Image" width="250" height="80" />
+        <Navbar />
+        <Button>
+          <button>Agendar Consulta</button>
+        </Button>
       </Header>
 
       <Footer style={{ opacity }}>
         <ul>
           <li>
-            <a href="#">Site Nutricionista</a>
+            <a href="#">Marina Marocci Nutricionista © 2021 - Todos os direitos reservados.</a>
           </li>
           <li>
-            <a href="#">Feito com amor </a>
+            <a href="#">Criado com 💛</a>
           </li>
           <li>
-            <a href="#">by GaahMariusso</a>
+            <a href="#">por Gabriel Mariusso Caldeira</a>
           </li>
         </ul>
       </Footer>
