@@ -3,8 +3,6 @@ import { useTransform } from 'framer-motion';
 
 import useWrapperScroll from '../Model/useWrapperScroll';
 
-import logoImg from '../../assets/images/logo_mm.svg';
-
 import { Navbar } from './Navbar';
 
 import { Container, Header, Button, Footer } from './styles';
@@ -17,7 +15,6 @@ const UniqueOverlay: React.FC = () => {
   return (
     <Container>
       <Header>
-        <img src={logoImg} alt="Logo Image" width="250" height="80" />
         <Navbar />
         <Button>
           <button>Agendar Consulta</button>

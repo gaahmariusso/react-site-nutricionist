@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import logoImg from '../../assets/images/logo_mm.svg';
+
 import { MenuItems } from './MenuItems';
 
 import { NavbarStyle } from './styles';
@@ -8,13 +10,16 @@ export class Navbar extends Component {
     state = { clicked: false }
 
     handleClick = () => {
-        this.setState({ clicked: this.state.clicked })
+        this.setState({ clicked: !this.state.clicked })
     }
 
     render() {
         return (
             <NavbarStyle>
                 <nav className="NavbarItems">
+                    <div className="navbar-logo">
+                        <img src={logoImg} alt="Logo Image" width="250" height="80" />
+                    </div>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>

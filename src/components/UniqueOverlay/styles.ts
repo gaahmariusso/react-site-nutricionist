@@ -25,13 +25,20 @@ export const Header = styled.header`
 `
 
 export const NavbarStyle = styled.div`
-    height: 60px;
-    display: flex;
-    margin-left: 10%;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: 500;
+    .NavbarItems {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .navbar-logo {
+        justify-self: start;
+        margin-right: 15%;
+        cursor: pointer;
+    }
 
     .nav-menu {
         display: grid;
@@ -40,7 +47,7 @@ export const NavbarStyle = styled.div`
         list-style: none;
         text-align: center;
         justify-content: end;
-        margin-right: 2rem;
+        margin-right: 3rem;
         text-transform: uppercase;
     }
 
@@ -55,8 +62,62 @@ export const NavbarStyle = styled.div`
         }
     }
 
+    .fa-bars {
+        color: #000;
+    }
+
     .menu-icon {
         display: none;
+    }
+
+    @media (max-width: 1015px) {
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+
+        .nav-menu.active {
+            background: #E1DDE4;
+            left: 0;
+            opacity: 1;
+            transition: all 0.5s ease;
+            z-index: 10;
+        }
+
+        .nav-links {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            display: table;
+
+            &:hover {
+                background-color: #3D096E;
+                color: #fff;
+                border-radius: 0;
+            }
+        }
+
+        .menu-icon {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-100%, 60%);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .fa-times {
+            color: #000;
+            font-size: 2rem;
+        }
     }
 `
 
@@ -89,6 +150,10 @@ export const Button = styled.div`
         & + button {
             margin: 10px 0 0;
         }
+    }
+
+    @media (max-width: 1015px) {
+        display: none;
     }
 `
 
@@ -126,7 +191,7 @@ export const Footer = styled(motion.footer)`
 
     margin-bottom: 30px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 1015px) {
         margin-bottom: 38px;
 
         ul {
