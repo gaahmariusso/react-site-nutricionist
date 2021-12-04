@@ -47,7 +47,7 @@ export const NavbarStyle = styled.div`
         list-style: none;
         text-align: center;
         justify-content: end;
-        margin-right: 3rem;
+        margin-right: 5rem;
         text-transform: uppercase;
     }
 
