@@ -58,10 +58,10 @@ const Contact: React.FC = () => {
             </li>
             <li className="socialsIcon">
               <i>
-                <a href="https://web.facebook.com/aguiasdobosque" target="_blank"><FaFacebook /></a>
+                <a href="https://www.facebook.com/marinamarocci.nutri" target="_blank"><FaFacebook /></a>
               </i>
               <i>
-                <a href="https://www.instagram.com/aguiasdobosque/" target="_blank"><FaInstagram /></a>
+                <a href="https://www.instagram.com/mamarocci.nutri/" target="_blank"><FaInstagram /></a>
               </i>
               <i>
                 {/* <Button
