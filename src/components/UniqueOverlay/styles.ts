@@ -47,11 +47,6 @@ export const NavbarStyle = styled.div`
         list-style: none;
         text-align: center;
         justify-content: end;
-<<<<<<< HEAD
-        /* margin-right: 3rem; */
-=======
-        margin-right: 5rem;
->>>>>>> f0d265112de3f00451df82b626749090f169010b
         text-transform: uppercase;
     }
 
