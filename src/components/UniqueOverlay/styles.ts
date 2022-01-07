@@ -47,7 +47,7 @@ export const NavbarStyle = styled.div`
         list-style: none;
         text-align: center;
         justify-content: end;
-        margin-right: 3rem;
+        /* margin-right: 3rem; */
         text-transform: uppercase;
     }
 
@@ -125,6 +125,7 @@ export const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5rem;
 
     > button {
         background: #3D096E;
