@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
             </li>
             <li className="socialsIcon">
               <i>
-                <a href="https://api.whatsapp.com/send?phone=5511910955929&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20online.%20" target="_blank" rel="noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=5511910955929" target="_blank" rel="noreferrer">
                   <img src={whatsappImage} alt="whatsapp" width="70" height="70" />
                 </a>
               </i>

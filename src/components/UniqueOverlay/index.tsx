@@ -17,7 +17,11 @@ const UniqueOverlay: React.FC = () => {
       <Header>
         <Navbar />
         <Button>
-          <button>Agendar Consulta</button>
+          <a href="https://api.whatsapp.com/send?phone=5511910955929" target="_blank" rel="noreferrer">
+            <button>
+              Agendar Consulta
+            </button>
+          </a>
         </Button>
       </Header>
 

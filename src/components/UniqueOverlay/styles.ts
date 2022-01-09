@@ -126,7 +126,7 @@ export const Button = styled.div`
     align-items: center;
     margin-left: 5rem;
 
-    > button {
+    > a button {
         background: #3D096E;
         color: #fff;
         opacity: 0.8;
@@ -147,7 +147,7 @@ export const Button = styled.div`
             opacity: 0.65;
         }
 
-        & + button {
+        & + a button {
             margin: 10px 0 0;
         }
     }
