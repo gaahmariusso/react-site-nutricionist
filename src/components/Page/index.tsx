@@ -6,7 +6,7 @@ import UniqueOverlay from '../UniqueOverlay';
 
 import AboutMe from '../AboutMe';
 import Appointment from '../Appointment';
-import Specialties from '../Specialties';
+// import Specialties from '../Specialties';
 import MeetTheOffice from '../MeetTheOffice';
 import MyServices from '../MyServices';
 // import Recipes from '../Recipes';
@@ -25,10 +25,10 @@ const Page: React.FC = () => {
       label: 'Como funciona a consulta ?',
       component: <Appointment />
     },
-    {
-      label: 'Especialidades',
-      component: <Specialties />
-    },
+    // {
+    //   label: 'Especialidades',
+    //   component: <Specialties />
+    // },
     {
       label: 'Conheça o consultório',
       component: <MeetTheOffice />

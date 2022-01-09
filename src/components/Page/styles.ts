@@ -13,13 +13,13 @@ export const Container = styled.div`
     .colored:nth-child(4) {
     background: #96A7BF;
     }
-    .colored:nth-child(5) {
+    /* .colored:nth-child(5) {
     background: #91ADC2;
-    }
+    } */
     /* .colored:nth-child(6) {
     background: #7A8B99;
     } */
-    .colored:nth-child(6) {
+    .colored:nth-child(5) {
     background: #E1DDE4;
     }
 `

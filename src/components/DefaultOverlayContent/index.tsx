@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Heading, Buttons } from './styles';
+import { Container, Heading } from './styles';
 
 interface Props {
   label: string;
@@ -17,10 +17,6 @@ const DefaultOverlayContent: React.FC<Props> = ({ label, components }) => {
 
       {components}
 
-      {/* <Buttons>
-        <button>Custom Order</button>
-        <button className="white">Existing Inventory</button>
-      </Buttons> */}
     </Container>
   );
 };
