@@ -45,12 +45,12 @@ li {
 }
 
 .socialsIcon {
-  margin: 2rem 2rem;
-  font-size: 5rem;
+  margin: 2rem 1rem;
+  font-size: 4rem;
 }
 
 .socialsIcon i {
-  margin-right: 5rem;
+  margin-right: 3rem;
   color: #3D096E;
 }
 

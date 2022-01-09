@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    margin-top: 2%;
 
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 `
 
-export const Buttons = styled.div`
+export const Button = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 130px;
+    margin-top: 2%;
 
     > button {
         background: #1a1720;

@@ -5,11 +5,11 @@ import DefaultOverlayContent from '../DefaultOverlayContent';
 import UniqueOverlay from '../UniqueOverlay';
 
 import AboutMe from '../AboutMe';
+import Appointment from '../Appointment';
 import Specialties from '../Specialties';
-import Formation from '../Formation';
 import MeetTheOffice from '../MeetTheOffice';
 import MyServices from '../MyServices';
-import Recipes from '../Recipes';
+// import Recipes from '../Recipes';
 import Contact from '../Contact';
 
 import { Container, Spacer } from './styles';
@@ -22,12 +22,12 @@ const Page: React.FC = () => {
       component: <AboutMe />
     },
     {
-      label: 'Especialidades',
-      component: <Specialties />
+      label: 'Como funciona a consulta ?',
+      component: <Appointment />
     },
     {
-      label: 'Minha formação',
-      component: <Formation />
+      label: 'Especialidades',
+      component: <Specialties />
     },
     {
       label: 'Conheça o consultório',
@@ -37,10 +37,10 @@ const Page: React.FC = () => {
       label: 'Serviços',
       component: <MyServices />
     },
-    {
-      label: 'Receitas',
-      component: <Recipes />
-    },
+    // {
+    //   label: 'Receitas',
+    //   component: <Recipes />
+    // },
     {
       label: 'Contato',
       component: <Contact />

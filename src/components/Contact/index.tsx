@@ -3,11 +3,15 @@ import React from 'react';
 
 import { Container } from './styles';
 
+import whatsappImage from '../../assets/images/whatsapp.png';
+import instagramImage from '../../assets/images/instagram.png';
+import facebookImage from '../../assets/images/facebook.png';
+
 import { FaWhatsapp } from 'react-icons/fa'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { FaRegEnvelope } from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
+// import { FaFacebook } from 'react-icons/fa'
+// import { FaInstagram } from 'react-icons/fa'
 import { FaShareAlt } from 'react-icons/fa'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import Iframe from 'react-iframe'
@@ -18,7 +22,7 @@ const Contact: React.FC = () => {
       <div className="row">
         {/* Coluna 1 */}
         <div className="col">
-          <h2>Localização</h2>
+          <h2>Localização:</h2>
           <ul className='localization'>
             <li>
               <i className='icon-frame'>
@@ -36,32 +40,41 @@ const Contact: React.FC = () => {
         </div>
         {/* Coluna 2 */}
         <div className="col">
-          <h2>Contatos</h2>
+          <h2>Como me encontrar:</h2>
           <ul className="list-contact">
             <li>
               <i className="icon-socialmedia">
                 <FaWhatsapp />
               </i>
-              + 55 11 96397-2070
+              + 55 11 91095-5929
             </li>
             <li>
               <i className="icon-socialmedia">
                 <FaTelegramPlane />
               </i>
-              + 55 11 96397-2070
+              + 55 11 91095-5929
             </li>
             <li>
               <i className="icon-socialmedia">
                 <FaRegEnvelope />
               </i>
-              marinamarocci.nutri@gmail.com
+              equipemarinamarocci@gmail.com
             </li>
             <li className="socialsIcon">
               <i>
-                <a href="https://www.facebook.com/marinamarocci.nutri" target="_blank"><FaFacebook /></a>
+                <a href="https://api.whatsapp.com/send?phone=5511910955929&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20online.%20" target="_blank" rel="noreferrer">
+                  <img src={whatsappImage} alt="whatsapp" width="70" height="70" />
+                </a>
               </i>
               <i>
-                <a href="https://www.instagram.com/mamarocci.nutri/" target="_blank"><FaInstagram /></a>
+                <a href="https://www.facebook.com/marinamarocci.nutri" target="_blank" rel="noreferrer">
+                  <img src={facebookImage} alt="whatsapp" width="70" height="70" />
+                </a>
+              </i>
+              <i>
+                <a href="https://www.instagram.com/mamarocci.nutri/" target="_blank" rel="noreferrer">
+                  <img src={instagramImage} alt="whatsapp" width="70" height="70" />
+                </a>
               </i>
               <i>
                 {/* <Button

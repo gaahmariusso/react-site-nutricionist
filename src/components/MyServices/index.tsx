@@ -1,12 +1,19 @@
 import React from 'react';
 
-import { Container, Buttons } from './styles';
+import { Container, Button } from './styles';
+
+import background from '../../assets/images/abacaxi-main2.jpg';
 
 const MyServices: React.FC = () => {
   return (
     <Container>
-      <h1>MyServices</h1>
-      <Buttons />
+
+      {/* TODO
+      - Atendimento online
+      - Atendimento presencial  */}
+      <Button>
+        <button>Servicos</button>
+      </Button>
     </Container>
   );
 };

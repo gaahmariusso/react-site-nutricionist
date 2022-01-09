@@ -24,7 +24,7 @@ const UniqueOverlay: React.FC = () => {
       <Footer style={{ opacity }}>
         <ul>
           <li>
-            <a href="#">Marina Marocci Nutricionista © 2021 - Todos os direitos reservados.</a>
+            <a href="#">Marina Marocci Nutrição Integrada © 2021 - Todos os direitos reservados.</a>
           </li>
           <li>
             <a href="#">Criado com 💛</a>
