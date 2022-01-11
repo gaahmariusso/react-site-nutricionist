@@ -3,6 +3,7 @@ import React from 'react';
 import Page from './components/Page';
 
 import { GlobalStyles } from './styles/GlobalStyles';
+import { FontStyles } from './styles/FontStyles';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Page />
 
       <GlobalStyles />
+      <FontStyles />
     </>
   );
 }

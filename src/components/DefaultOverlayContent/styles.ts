@@ -23,6 +23,10 @@ export const Heading = styled.div`
         line-height: 20px;
         color: #5c5e62
     }
+
+    @media (max-width: 1015px) {
+        margin-top: 15vh;
+    }
 `
 
 export const Buttons = styled.div`
