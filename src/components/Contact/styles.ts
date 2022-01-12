@@ -4,7 +4,7 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-  margin: 3em 10em 2em;
+  margin: 5em 10em;
 
 h2 {
   color: black;
@@ -51,11 +51,12 @@ li {
 
 .socialsIcon i {
   margin-right: 3rem;
-  color: #3D096E;
 }
 
-.socialsIcon i a {
-  color: #3D096E;
+.shareButton {
+  cursor: pointer;
+  background: none;
+  border:none;
 }
 
 `;

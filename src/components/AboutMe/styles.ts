@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-/* @import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap'); */
-
     display: flex;
     margin: 3em 20em;
     font-size: 1.2rem;

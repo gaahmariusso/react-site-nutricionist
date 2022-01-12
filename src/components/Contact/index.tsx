@@ -1,22 +1,38 @@
 import React from 'react';
-// import Link from 'react-router-dom';
 
 import { Container } from './styles';
 
 import whatsappImage from '../../assets/images/whatsapp.png';
 import instagramImage from '../../assets/images/instagram.png';
 import facebookImage from '../../assets/images/facebook.png';
+import shareImage from '../../assets/images/share.png';
 
-import { FaWhatsapp } from 'react-icons/fa'
-import { FaTelegramPlane } from 'react-icons/fa'
-import { FaRegEnvelope } from 'react-icons/fa'
-// import { FaFacebook } from 'react-icons/fa'
-// import { FaInstagram } from 'react-icons/fa'
-import { FaShareAlt } from 'react-icons/fa'
-import { FaMapMarkerAlt } from 'react-icons/fa'
-import Iframe from 'react-iframe'
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { FaRegEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import Iframe from 'react-iframe';
 
 const Contact: React.FC = () => {
+
+  const handleShareButton = () => {
+    if (navigator.share) {
+      console.log("Congrats! Your browser supports Web Share API");
+      navigator
+        .share({
+          url: `https://www.google.com.br/`
+        })
+        .then(() => {
+          console.log("Sharing successfull");
+        })
+        .catch(() => {
+          console.log("Sharing failed");
+        });
+    } else {
+      console.log("Sorry! Your browser does not support Web Share API");
+    }
+  };
+
   return (
     <Container>
       <div className="row">
@@ -77,21 +93,14 @@ const Contact: React.FC = () => {
                 </a>
               </i>
               <i>
-                {/* <Button
-                              className='myWonderfulButton'
-                              onClick={
-                                  () => {
-                                      navigator.share({
-                                          title: 'Share',
-                                          text: 'whatevs',
-                                          url: this.state.link
-                                      }
-                                      )
-                                  }
-                              }>
-                              Compartilhar
-                          </Button> */}
-                <FaShareAlt />
+                <button
+                  onClick={handleShareButton}
+                  className="shareButton"
+                  type="button"
+                  title="Share site"
+                >
+                  <img src={shareImage} alt="share" width="70" height="70" />
+                </button>
               </i>
             </li>
           </ul>
