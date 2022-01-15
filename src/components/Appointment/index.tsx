@@ -12,8 +12,11 @@ const Appointment: React.FC = () => {
   return (
     <Container>
       <div className='container'>
-        <img className='consultaPresencial' src={consultaPresencial} alt="ConsultaPresencial" />
-        <img className='consultaOnline' src={consultaOnline} alt="ConsultaOnline" />
+        <p>A consulta tem duracao de aproximadamente 1h30m, online ou presencial, e comeca antes mesmo do seu atendimento.</p>
+        <div className='container-img'>
+          <img className='consultaPresencial' src={consultaPresencial} alt="ConsultaPresencial" />
+          <img className='consultaOnline' src={consultaOnline} alt="ConsultaOnline" />
+        </div>
       </div>
     </Container>
   );

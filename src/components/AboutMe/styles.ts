@@ -66,13 +66,13 @@ export const Container = styled.div`
         
     }
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1440px) {
 
-        margin: 2em 2em;
+        margin: 3% 10%;
         font-size: 1rem;
 
         .aboutme-container {
-            /* margin-top: 2%; */
+            // margin-top: 2%;
             margin-left: 5%;
         }    
     }

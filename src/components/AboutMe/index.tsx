@@ -33,9 +33,9 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="aboutme-formation">
           <p>Formação Acadêmica:</p>
-          <p>1. Graduação em Nutrição (Centro Universitário São Camilo) - </p>
-          <p>2. Pós graduada em Nutrição e Metabolismo Esportivo (Ganep) - </p>
-          <p>3. Curso de Modulação Intestinal (Murilo Pereira) - </p>
+          <p>1. Graduação em Nutrição (Centro Universitário São Camilo) - 2016</p>
+          <p>2. Pós graduada em Nutrição e Metabolismo Esportivo (Ganep) - 2018</p>
+          <p>3. Curso de Modulação Intestinal (Murilo Pereira) - 2019</p>
         </div>
         <div className="social-icons">
           <div className='facebook-icon'>

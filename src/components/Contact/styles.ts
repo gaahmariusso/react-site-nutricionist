@@ -59,4 +59,46 @@ li {
   border:none;
 }
 
+@media (max-width: 1440px) {
+
+  display: flex;
+  margin: 3% 5%;
+  font-size: 0.8rem;
+
+  .icon-frame {
+    margin-right: 1rem;
+  }
+
+  .iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1015px) {
+
+  display: flex;
+  margin: 5% 3%;
+  font-size: 0.8rem;
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  .icon-frame {
+    margin-right: 1rem;
+  }
+
+  .iframe {
+    width: 450px;
+    height: 250px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
 `;

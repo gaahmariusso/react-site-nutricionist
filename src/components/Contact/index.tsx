@@ -47,11 +47,12 @@ const Contact: React.FC = () => {
               Cidade Viva Offices - Av. Industrial, 1680, Campestre, Santo André - Torre 2, sala 104
             </li>
           </ul>
-          <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.955613352041!2d-46.539628585020765!3d-23.641760584643098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce439a18e90157%3A0x2a7b8d93ad57d818!2sCondominio%20Cidade%20Viva%20Offices!5e0!3m2!1spt-BR!2sbr!4v1641590393333!5m2!1spt-BR!2sbr"
+          <Iframe
+            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.955613352041!2d-46.539628585020765!3d-23.641760584643098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce439a18e90157%3A0x2a7b8d93ad57d818!2sCondominio%20Cidade%20Viva%20Offices!5e0!3m2!1spt-BR!2sbr!4v1641590393333!5m2!1spt-BR!2sbr"
             width="700"
             height="450"
-            id="localization"
-            className="localization"
+            id="iframe"
+            className="iframe"
             position="relative" />
         </div>
         {/* Coluna 2 */}
