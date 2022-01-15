@@ -71,10 +71,31 @@ export const Container = styled.div`
         margin: 3% 10%;
         font-size: 1rem;
 
+        .imagePrincipal {
+            width: 350px;
+            height: 550px;
+        }
+
         .aboutme-container {
-            // margin-top: 2%;
             margin-left: 5%;
-        }    
+        }
+        
+        .aboutme-description {
+            margin-top: 5%;
+        }
+
+        .aboutme-phrase {
+            margin-top: 5%;
+        }
+
+        .aboutme-formation {
+            margin-top: 3%;
+            line-height: 50px;
+        }
+
+        .social-icons {
+            margin-top: 4%;
+        }
     }
 
     @media (max-width: 1015px) {
