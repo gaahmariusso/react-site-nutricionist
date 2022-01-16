@@ -70,8 +70,8 @@ li {
   }
 
   .iframe {
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 350px;
   }
 }
 

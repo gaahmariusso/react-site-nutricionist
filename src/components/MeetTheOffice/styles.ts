@@ -7,7 +7,7 @@ justify-content: center;
 
  @media (max-width: 1440px) {
 
-    margin-top: 5%;
+    margin-top: 3%;
   }
   
   @media (max-width: 1015px) {

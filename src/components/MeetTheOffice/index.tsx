@@ -9,7 +9,7 @@ const MeetTheOffice: React.FC = () => {
     <Container>
       <Iframe
         url="https://360player.io/p/twb2Yz/"
-        width="800"
+        width="1200"
         height="500"
         allow="fullscreen; xr-spatial-tracking"
         data-token="twb2Yz"
