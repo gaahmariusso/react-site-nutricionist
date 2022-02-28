@@ -2,13 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     
-    margin: 3% 15% 15% 15%;
+    margin: 3% 10% 0 10%;
 
     img {
-        width: 40%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px 5px 0 0;
+        max-width: 60%;
     }
 
     h3 {
@@ -17,13 +14,14 @@ export const Container = styled.div`
     }
 
     .cards {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100%;
+        grid-gap: 5%;
     }
 
     .card {
-        max-width: 30%;
-        margin: auto;
+        max-height: 90%;
         text-align: center;
 
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -36,17 +34,18 @@ export const Container = styled.div`
     }
 
     .container {
-        padding: 10% 10% 10% 10%;
+        padding: 10% 10%;
     }
 
     .card button {
         border: none;
+        border-radius: 0 0 5px 5px;
         outline: 0;
         padding: 12px;
         color: white;
         background-color: #3D096E;
         text-align: center;
-        cursor: pointer;
+        // cursor: pointer;
         width: 100%;
         font-size: 18px;
     }
@@ -64,7 +63,7 @@ export const Container = styled.div`
     @media (max-width: 1440px) {
 
         img {
-            width: 40%;
+            width: 60%;
             border-radius: 5px 5px 0 0;
         }
     }
@@ -82,39 +81,3 @@ export const Container = styled.div`
         }
     }
 `
-
-// export const Button = styled.div`
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: 5%;
-
-//     > button {
-//         background: #1a1720;
-//         color: #fff;
-//         opacity: 0.8;
-
-//         font-size: 12px;
-//         font-weight: 500;
-//         letter-spacing: 0.4px;
-//         text-transform: uppercase;
-
-//         padding: 13px 40px;
-//         margin-bottom: 50px;
-//         border-radius: 20px;
-//         border: none;
-//         /* cursor: pointer; */
-
-//         &.white {
-//             background: #fff;
-//             color: #1a1720;
-//             opacity: 0.65;
-//         }
-
-//         & + button {
-//             margin: 10px 0 0;
-//         }
-//     }
-
-// `
