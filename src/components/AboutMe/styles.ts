@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 
     display: flex;
-    margin: 3em 20em;
+    margin: 3em 15em;
     font-size: 1.2rem;
 
     .imagePrincipal {

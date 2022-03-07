@@ -54,7 +54,7 @@ export const Container = styled.div`
     }
 
     .doubt {
-        margin-top: 3%;
+        margin-top: 10%;
         display: flex;
         justify-content: center;
     }

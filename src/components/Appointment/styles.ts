@@ -3,40 +3,75 @@ import styled from 'styled-components';
 export const Container = styled.div`
 
     display: flex;
-    margin: 5%;
+    flex-direction: column;
+    margin: 3% 10% 0 10%;
 
-    p {
-        font-size: 1.5rem;
-        margin-right: 20%;
-        margin-left: 20%;
+    .description {
+        text-align: center;
+
+        p {
+        font-size: 1.2rem;
+        }
     }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    .container-img {
-        display: flex;
+    
+    .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10%;
         margin-top: 5%;
     }
 
-    // .consultaPresencial {
-    //     border: double 10px transparent;
-    //     border-radius: 2em;
-    //     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3D096E,#743ad5);
-    //     background-origin: border-box;
-    //     background-clip: content-box, border-box;
-    // }
+    .row2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 100%;
+        grid-gap: 15%;
+        margin-top: 5%;
 
-    // .consultaOnline {
-    //     border: double 10px transparent;
-    //     border-radius: 2em;
-    //     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3D096E,#743ad5);
-    //     background-origin: border-box;
-    //     background-clip: content-box, border-box;
-    // }
+        .title {
+            display: inline;
+            margin-left: 5%;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .content {
+            margin-top: 5%;
+            color: #393c41;
+        }
+
+        span {
+            font-family: 'Geomanist Bold',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #393c41;
+        }
+    }
+
+    .col1 {
+        h1 {
+            color: #4682B4;
+        }
+        .title {
+            color: #4682B4;
+        }
+    }
+
+    .col2 {
+        h1 {
+            color: #7B68EE; //8A2BE2
+        }
+        .title {
+            color: #7B68EE; //8A2BE2
+        }
+    }
+
+    .doubt {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
 
     @media (max-width: 1400px) {
 
