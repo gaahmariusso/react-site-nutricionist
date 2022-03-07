@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     
-    margin: 3% 10% 0 10%;
+    margin: 3% 15% 0 15%;
 
     img {
-        max-width: 60%;
+        max-width: 50%;
     }
 
     h3 {
@@ -45,7 +45,6 @@ export const Container = styled.div`
         color: white;
         background-color: #3D096E;
         text-align: center;
-        // cursor: pointer;
         width: 100%;
         font-size: 18px;
     }

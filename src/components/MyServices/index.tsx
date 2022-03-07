@@ -16,10 +16,9 @@ const MyServices: React.FC = () => {
           <div className="container card-nutri-sport">
             <h3><b>Nutrição para o esporte</b></h3>
             <p>Melhora de desempenho esportivo, rendimento durante treinos, reforço na recuperação pós-treino e provas.</p>
-            <p></p>
-            <p></p>
+            <br />
           </div>
-          <p><button>Nutrição e Desempenho</button></p>
+          <p><button>Performance</button></p>
         </div>
 
         <div className="card nutri-slimming-hypertrophy">
@@ -29,7 +28,7 @@ const MyServices: React.FC = () => {
             <p>Plano alimentar para mudanças na composição corporal como emagrecimento e hipertrofia.</p>
             <br />
           </div>
-          <p><button>Emagrecimento/Hipertrofia</button></p>
+          <p><button>Emagrecimento | Hipertrofia</button></p>
         </div>
 
         <div className="card nutri-health">
@@ -39,7 +38,7 @@ const MyServices: React.FC = () => {
             <p>Reeducação alimentar para prevenção ou tratamento de doenças ou fatores de risco.</p>
             <br />
           </div>
-          <p><button>Nutrição e Saúde</button></p>
+          <p><button>Longevidade</button></p>
         </div>
       </div>
 
