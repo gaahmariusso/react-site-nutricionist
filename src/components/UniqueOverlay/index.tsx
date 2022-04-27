@@ -34,7 +34,7 @@ const UniqueOverlay: React.FC = () => {
             <a href="#">Criado com 💛</a>
           </li>
           <li>
-            <a href="#">por Gabriel Mariusso Caldeira</a>
+            <a href="https://linktr.ee/gaahmariusso" target="_blank">por Gabriel Mariusso Caldeira</a>
           </li>
         </ul>
       </Footer>
