@@ -8,12 +8,11 @@ margin-top: 3%;
 
  @media (max-width: 1440px) {
 
-    margin-top: 3%;
+  margin: 3% 10% 0% 10%;
   }
   
   @media (max-width: 1015px) {
   
-    margin-top: 5%;
+  margin: 3% 10% 0% 10%;
   }
-
-`;
+`
