@@ -78,52 +78,27 @@ export const Container = styled.div`
     display: flex;
     margin-top: 3%;
 
-        .container-img {
-            display: flex;
-            flex-direction: column;
-        }
-
-        img {
-            width: 75%;
-        }
-
-        .consultaPresencial {
-                border: double 5px transparent;
-        }
-
-        .consultaOnline {
-                border: double 5px transparent;
-        }
     }
 
     @media (max-width: 1015px) {
 
     display: flex;
-    margin-top: 2%;
-
-        .container-img {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-        }
+    margin: 2% 2% 0 2%;
 
         p {
-            font-size: 1rem;
-            margin-right: 20%;
-            margin-left: 20%;
+            font-size: 0.9rem;
         }
 
-        img {
-            width: 65%;
+        .description {
+            p {
+                font-size: 1rem;
+            }
         }
 
-        .consultaPresencial {
-                border: double 5px transparent;
-        }
-
-        .consultaOnline {
-                border: double 5px transparent;
-        }
+        .doubt {
+        margin-top: 10%;
+    }
+        
     }
 
 `

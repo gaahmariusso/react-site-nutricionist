@@ -69,10 +69,11 @@ export const Container = styled.div`
 
     @media (max-width: 1015px) {
 
-        margin: 3% 5% 5% 15%;
+        margin: 5% 5% 5% 5%;
 
         img {
-            width: 30%;
+            max-width: 50%;
+            width: 50%;
         }
 
         .card button {
